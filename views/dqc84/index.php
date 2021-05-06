@@ -7,7 +7,7 @@ use yii\widgets\Pjax;
 /* @var $searchModel app\models\Dqc84Search */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Dqc84s';
+$this->title = 'Gerenciar DQC 84';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="dqc84-index">
@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Dqc84', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Criar DQC 84', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php Pjax::begin(); ?>
@@ -27,12 +27,12 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
+            //'id',
             'model',
             'fat_part_no',
             'total_location',
             'update_dt',
-            //'create_dt',
+            'create_dt',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
