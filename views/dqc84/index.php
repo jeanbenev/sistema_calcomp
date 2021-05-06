@@ -28,7 +28,15 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             //'id',
-            'model',
+            [
+                'label' => 'Model',
+                'attribute' => 'model',
+                'value' => function ($data) {
+                    return $data->getModelText();
+                },
+                'filter' => $searchModel->getModelOptions(),
+                'filterInputOptions' => ['prompt' => '..:: Selecione o Model ::..', 'class' => 'form-control', 'id' => null]
+            ],
             'fat_part_no',
             'total_location',
             'update_dt',

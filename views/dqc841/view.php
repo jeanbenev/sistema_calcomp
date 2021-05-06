@@ -30,11 +30,10 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'id',
-            'fat_part_no',
-            [
-                'label' => 'Fat Part No',
-                'value'  => $model->fatPartNo->fat_part_no,
-            ],
+            [ 
+                'label' => 'Fat Part No', 
+                'value'  => $model->fatPartNo->fat_part_no, 
+            ], 
             'parts_no',
             'unt_usg',
             'description:ntext',

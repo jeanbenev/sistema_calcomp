@@ -70,4 +70,25 @@ class Dqc841 extends \yii\db\ActiveRecord
     {
         return $this->hasOne(Dqc84::className(), ['id' => 'fat_part_no']);
     }
+
+    /**
+     * @uses Usado para criar uma lista array com os dados da tabela relacionada
+     */
+    public function getFatPartNoOptions()
+	{
+        $model = new Dqc84();
+        $opt = Array();
+        foreach($model->find()->all() as $dqc84){
+            $opt[$dqc84->id] = $dqc84->fat_part_no;
+        }
+		return $opt;
+	}
+
+    /**
+     * @uses Usada para buscar uma lista de array de dados e substituir pelo atributo especifico da instancia
+     */
+	public function getFatPartNoText(){
+		$options = $this->getFatPartNoOptions();
+		return $options[$this->fat_part_no];
+	}
 }

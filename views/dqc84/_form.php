@@ -12,7 +12,7 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <? //$form->field($model, 'model')->textInput() ?>
+    <?= $form->field($model, 'model')->dropDownList($model->getModelOptions(), ['prompt'=>'..:: Selecione o Model ::..']); ?>
 
     <?= $form->field($model, 'fat_part_no')->textInput(['maxlength' => true]) ?>
 

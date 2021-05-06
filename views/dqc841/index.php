@@ -28,7 +28,15 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             //'id',
-            'fat_part_no',
+            [
+                'label' => 'Fat Part No',
+                'attribute' => 'fat_part_no',
+                'value' => function ($data) {
+                    return $data->getFatPartNoText();
+                },
+                'filter' => $searchModel->getFatPartNoOptions(),
+                'filterInputOptions' => ['prompt' => '..:: Selecione o Fat Parts No ::..', 'class' => 'form-control', 'id' => null]
+            ],
             'parts_no',
             'unt_usg',
             'description:ntext',

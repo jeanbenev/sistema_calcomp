@@ -30,10 +30,10 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'id',
-            [
-                'label' => 'Model',
-                'value' => $model->model0->model,            
-            ],
+            [ 
+                'label' => 'Model', 
+                'value' => $model->model0->model,           
+            ], 
             'fat_part_no',
             'total_location',
             'update_dt',

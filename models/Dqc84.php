@@ -76,4 +76,25 @@ class Dqc84 extends \yii\db\ActiveRecord
     {
         return $this->hasMany(Dqc841::className(), ['fat_part_no' => 'id']);
     }
+
+    /**
+     * @uses Usado para criar uma lista array com os dados da tabela relacionada DqcModel
+     */
+    public function getModelOptions()
+	{
+        $model = new Dqcmodel();
+        $opt = Array();
+        foreach($model->find()->all() as $dqcmodel){
+            $opt[$dqcmodel->id] = $dqcmodel->model;
+        }
+		return $opt;
+	}
+
+    /**
+     * @uses Usada para buscar uma lista de array de dados e substituir pelo atributo especifico da instancia
+     */
+	public function getModelText(){
+		$options = $this->getModelOptions();
+		return $options[$this->model];
+	}
 }
