@@ -6,8 +6,8 @@ use yii\helpers\Html;
 /* @var $model app\models\Dqcmodel */
 
 $this->title = 'Alterar DQC Model: ' . $model->model;
-$this->params['breadcrumbs'][] = ['label' => 'DQC MODEL', 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => 'ID: '.$model->id, 'url' => ['view', 'id' => $model->id]];
+$this->params['breadcrumbs'][] = ['label' => 'Gerenciar DQC Model', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => $model->model, 'url' => ['view', 'id' => $model->id]];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="dqcmodel-update">

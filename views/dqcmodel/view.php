@@ -7,7 +7,7 @@ use yii\widgets\DetailView;
 /* @var $model app\models\Dqcmodel */
 
 $this->title = 'Visualizar DQC Model: '.$model->model;
-$this->params['breadcrumbs'][] = ['label' => 'DQC MODEL', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Gerenciar DQC Model', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
