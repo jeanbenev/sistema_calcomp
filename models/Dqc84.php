@@ -52,8 +52,8 @@ class Dqc84 extends \yii\db\ActiveRecord
             'model' => 'Model',
             'fat_part_no' => 'Fat Part No',
             'total_location' => 'Total Location',
-            'update_dt' => 'Update Dt',
-            'create_dt' => 'Create Dt',
+            'update_dt' => 'Data de Alteração',
+            'create_dt' => 'Data de Criação',
         ];
     }
 
