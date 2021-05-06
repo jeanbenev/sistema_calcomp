@@ -56,8 +56,8 @@ class Dqc841 extends \yii\db\ActiveRecord
             'unt_usg' => 'Unt Usg',
             'description' => 'Description',
             'ref_designator' => 'Ref Designator',
-            'update_dt' => 'Update Dt',
-            'create_dt' => 'Create Dt',
+            'update_dt' => 'Data de Alteração',
+            'create_dt' => 'Data de Criação',
         ];
     }
 
