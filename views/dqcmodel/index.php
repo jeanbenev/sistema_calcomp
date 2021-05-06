@@ -7,7 +7,7 @@ use yii\widgets\Pjax;
 /* @var $searchModel app\models\DqcmodelSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Gerenciar DQC Models';
+$this->title = 'Gerenciar DQC Model';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="dqcmodel-index">
