@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model app\models\Dqc84 */
 
-$this->title = 'Visualizar DQC 84: '.$model->id;
+$this->title = 'Visualizar DQC 84: '.$model->fat_part_no;
 $this->params['breadcrumbs'][] = ['label' => 'DQC 84', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
@@ -30,7 +30,10 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'id',
-            'model',
+            [
+                'label' => 'Model',
+                'value' => $model->model0->model,            
+            ],
             'fat_part_no',
             'total_location',
             'update_dt',

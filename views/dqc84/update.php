@@ -5,10 +5,10 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Dqc84 */
 
-$this->title = 'Alterar DQC 84: ' . $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'DQC 84', 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => 'ID: '.$model->id, 'url' => ['view', 'id' => $model->id]];
-$this->params['breadcrumbs'][] = 'Alterar';
+$this->title = 'Alterar DQC 84: ' . $model->fat_part_no;
+$this->params['breadcrumbs'][] = ['label' => 'Gerenciar DQC 84', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => $model->fat_part_no, 'url' => ['view', 'id' => $model->id]];
+$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="dqc84-update">
 
