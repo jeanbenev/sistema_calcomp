@@ -5,6 +5,7 @@ $db = require __DIR__ . '/db.php';
 
 $config = [
     'id' => 'calcomp',
+    'name' => 'Sistema CalComp',
     'language' => 'pt-br',
     'timezone' => 'America/Manaus',
     'basePath' => dirname(__DIR__),
