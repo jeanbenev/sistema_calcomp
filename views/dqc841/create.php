@@ -5,8 +5,8 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Dqc841 */
 
-$this->title = 'Create Dqc841';
-$this->params['breadcrumbs'][] = ['label' => 'Dqc841s', 'url' => ['index']];
+$this->title = 'Criar DQC 841';
+$this->params['breadcrumbs'][] = ['label' => 'DQC 841', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="dqc841-create">
