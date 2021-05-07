@@ -74,6 +74,19 @@ class Dqc841 extends \yii\db\ActiveRecord
     /**
      * @uses Usado para criar uma lista array com os dados da tabela relacionada
      */
+    public function getModelOptions()
+	{
+        $model = new DqcModel();
+        $opt = Array();
+        foreach($model->find()->all() as $dqcmodel){
+            $opt[$dqcmodel->id] = $dqcmodel->model;
+        }
+		return $opt;
+	}
+
+    /**
+     * @uses Usado para criar uma lista array com os dados da tabela relacionada
+     */
     public function getFatPartNoOptions()
 	{
         $model = new Dqc84();
