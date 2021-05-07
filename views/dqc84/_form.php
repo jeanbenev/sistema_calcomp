@@ -18,10 +18,6 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'total_location')->textInput() ?>
 
-    <?= $form->field($model, 'update_dt')->textInput() ?>
-
-    <?= $form->field($model, 'create_dt')->textInput() ?>
-
     <div class="form-group">
         <?= Html::submitButton('Salvar', ['class' => 'btn btn-success']) ?>
     </div>

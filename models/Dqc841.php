@@ -91,4 +91,31 @@ class Dqc841 extends \yii\db\ActiveRecord
 		$options = $this->getFatPartNoOptions();
 		return $options[$this->fat_part_no];
 	}
+
+    
+    /**
+     * @uses Usado para fazer tratamentos antes do salvamento dos dados
+     */
+    public function beforeSave($insert){
+        //Se for scenario de insert
+        if($insert){
+            //Tratamento do campo data para o formato aceito pelo MySQL
+            $this->create_dt            = date("Y-m-d H:i:s");
+            $this->update_dt            = date("Y-m-d H:i:s");
+        }
+        //Se for scenario de update
+        else{
+            $this->create_dt            = substr($this->create_dt, 6, 4).'-'.substr($this->create_dt, 3, 2).'-'.substr($this->create_dt, 0, 2).' '.substr($this->create_dt, 11, 8);
+            $this->update_dt            = date("Y-m-d H:i:s");
+        }
+        return parent::beforeSave($insert);
+    }
+
+    public function afterFind(){
+        //Tratamento dos campos data do MySQL para o formato legível do usuário
+        $this->create_dt            = substr($this->create_dt, 8, 2).'/'.substr($this->create_dt, 5, 2).'/'.substr($this->create_dt, 0, 4).' '.substr($this->create_dt, 11, 8);
+        $this->update_dt            = substr($this->update_dt, 8, 2).'/'.substr($this->update_dt, 5, 2).'/'.substr($this->update_dt, 0, 4).' '.substr($this->update_dt, 11, 8);
+        return parent::afterFind();
+    }
+
 }
