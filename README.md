@@ -8,8 +8,7 @@
     <br>
 </p>
 
-O sistema nomeado "Sistema de Gerenciamento de Projetos" para a empresa Lorem Ipsum foi feito usando 
-o framework [Yii 2](http://www.yiiframework.com/).
+O sistema foi feito usando o framework [Yii 2](http://www.yiiframework.com/).
 
 FUNCIONALIDADES
 ------------
