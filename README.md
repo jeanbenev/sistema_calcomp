@@ -80,6 +80,10 @@ A aplicação Yii2 está no diretório `basic` que está dentro do arquivo baixa
 
 2) Coloque o diretório `calcomp` na raiz web do seu localhost.
 
+### Verificar os requesitos do Yii2
+
+É necessário que os requesitos contidos no página `http://localhost/calcomp/requirements.php` estejam ativados.
+
 ### Instalação dos pacotes necessarios para rodar a aplicação
 
 É necessário que você tenha o composer instalado e execute os seguintes comandos na pasta do sistema `calcomp`
