@@ -3,12 +3,26 @@
 use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\widgets\Pjax;
+use kartik\dialog\Dialog;
+
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\Dqc84Search */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'Gerenciar DQC 84';
 $this->params['breadcrumbs'][] = $this->title;
+
+Dialog::widget();
+
+$this->registerJs('if(window.location.search.search("contem=true") === 1){
+    krajeeDialog.alert("Esse registro não pode ser excluído pois está associado a algum projeto.", function (result) {
+        if (result) {
+            window.location = window.location.pathname;
+        }
+    });
+}');
+
+
 ?>
 <div class="dqc84-index">
 

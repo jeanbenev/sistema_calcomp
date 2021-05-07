@@ -104,8 +104,13 @@ class Dqc84Controller extends Controller
      */
     public function actionDelete($id)
     {
-        $this->findModel($id)->delete();
-
+        $dqc84 = $this->findModel($id);
+        if(empty($dqc84->dqc841s)){
+            $dqc84->delete();
+        }
+        else{
+            return $this->redirect(['index','contem'=>'true']);
+        }
         return $this->redirect(['index']);
     }
 
