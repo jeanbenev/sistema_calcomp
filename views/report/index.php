@@ -17,9 +17,7 @@ Dialog::widget();
 $this->registerJs('if(window.location.search.search("report=true") === 1){
     window.location = window.location.pathname;
 }
-function exportarExcell(){
-    window.location = window.location.pathname;
-}');
+');
 
 
 ?>
@@ -28,7 +26,7 @@ function exportarExcell(){
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::button('Exportar Dados', ['class'=>'btn btn-success', 'onclick'=>'window.location=window.location.href+"&report=true";']) ?>
+        <?= Html::button('Exportar Dados', ['class'=>'btn btn-success', 'onclick'=>'window.location.search ? window.location = window.location.href+"&report=true" : window.location = "?report=true";']) ?>
     </p>
 
     <?php Pjax::begin(); ?>

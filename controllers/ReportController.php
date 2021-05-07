@@ -54,6 +54,7 @@ class ReportController extends Controller
                             'parts_no',
                             'unt_usg',
                             'description',
+                            'ref_designator',
                         ]
                     ]
                 ]
