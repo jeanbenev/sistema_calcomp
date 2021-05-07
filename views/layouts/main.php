@@ -41,6 +41,7 @@ AppAsset::register($this);
             ['label' => 'DQC Model', 'url' => ['/dqcmodel/index']],
             ['label' => 'DQC 84', 'url' => ['/dqc84/index']],
             ['label' => 'DQC 841', 'url' => ['/dqc841/index']],
+            ['label' => 'Report', 'url' => ['/report/report']],
             /*Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]
             ) : (
