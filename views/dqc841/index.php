@@ -3,12 +3,15 @@
 use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\widgets\Pjax;
+use kartik\dialog\Dialog;
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\Dqc841Search */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'Gerenciar DQC 841';
 $this->params['breadcrumbs'][] = $this->title;
+
+Dialog::widget();
 ?>
 <div class="dqc841-index">
 
