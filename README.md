@@ -40,7 +40,7 @@ O modulo `Dqc84` contem as seguintes funcionalidades:
 
 ### Modulo Dqc841
 
-O modulo `Dqc841` é um módulo invisível usado somente para a associação de participantes a projetos.
+O modulo `Dqc841` contem as seguintes funcionalidades:
 
 ~~~
 1) Criação de Dqc841.
@@ -69,7 +69,7 @@ Agora você deve ser capaz de acessar o aplicativo através da seguinte URL, ass
 diretamente na raiz do seu servidor web.
 
 ~~~
-http://localhost/sistema_lorem-ipsum/web/
+http://localhost/calcomp/web/
 ~~~
 
 ### Instalação a partir de um arquivo
